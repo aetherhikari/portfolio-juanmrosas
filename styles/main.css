@@ -1,0 +1,153 @@
+:root {
+  --main-background: #0c1618;
+  --main-decor-color: #004643;
+  --main-fonts-color: #faf4d3;
+  --thr-color: #d1ac00;
+  --sec-color: #f6be9a;
+  --font: "Josefin Sans", sans-serif;
+  --font1: "Comfortaa", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-background);
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+.nav-show {
+  opacity: 0;
+}
+
+header:hover {
+  opacity: 1;
+  background: var(--main-decor-color);
+}
+
+.logo img {
+  padding-top: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  list-style: none;
+  position: relative;
+  display: inline-flex;
+}
+
+a.nav-link {
+  margin: 2px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--main-fonts-color);
+  font-family: var(--font1);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.active {
+  background: var(--thr-color);
+}
+
+.nav-link:hover {
+  color: var(--main-decor-color);
+  background: var(--sec-color);
+}
+
+#home {
+  margin: auto;
+  height: 100vh;
+  color: var(--main-fonts-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#home .filter {
+  background: url(../media/mesh-497.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.intro {
+  text-align: center;
+  color: var(--main-fonts-color);
+  z-index: 1;
+  margin: auto;
+  padding: 20px;
+}
+
+.intro p {
+  margin: 5px;
+  font-size: 1.2rem;
+  font-family: var(--font1);
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 15px;
+  letter-spacing: normal;
+  font-family: var(--font1);
+  font-style: normal;
+  font-size: 60px;
+  color: var(--main-fonts-color);
+  text-shadow: 0px 0px 40px var(--thr-color);
+}
+
+.intro span {
+  font-size: 700;
+  color: var(--sec-color);
+}
+
+.social-media {
+  padding: 10px;
+  display: flex;
+  position: center;
+  align-items: space-around;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 10px;
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  color: var(--main-fonts-color);
+}
+
+.social-media a i {
+  cursor: pointer;
+}
+
+.social-media a:hover {
+  color: var(--thr-color);
+  text-shadow: 0 0 50px var(--thr-color);
+}/*# sourceMappingURL=main.css.map */
